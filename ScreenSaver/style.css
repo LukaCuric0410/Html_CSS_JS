@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.maze-screensaver {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  animation: moveScreensaver 2s infinite alternate linear;
+}
+
+@keyframes moveScreensaver {
+  to {
+    transform: translateX(calc(100vw - 20px)) translateY(calc(100vh - 20px));
+  }
+}
